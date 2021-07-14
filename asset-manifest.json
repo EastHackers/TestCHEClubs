@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TestCHEClubs/static/css/main.c6e45d30.chunk.css",
-    "main.js": "/TestCHEClubs/static/js/main.bdb07b3e.chunk.js",
-    "main.js.map": "/TestCHEClubs/static/js/main.bdb07b3e.chunk.js.map",
+    "main.js": "/TestCHEClubs/static/js/main.a59c8d19.chunk.js",
+    "main.js.map": "/TestCHEClubs/static/js/main.a59c8d19.chunk.js.map",
     "runtime-main.js": "/TestCHEClubs/static/js/runtime-main.8acf3134.js",
     "runtime-main.js.map": "/TestCHEClubs/static/js/runtime-main.8acf3134.js.map",
     "static/css/2.29291e13.chunk.css": "/TestCHEClubs/static/css/2.29291e13.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.29291e13.chunk.css",
     "static/js/2.41a4b0ee.chunk.js",
     "static/css/main.c6e45d30.chunk.css",
-    "static/js/main.bdb07b3e.chunk.js"
+    "static/js/main.a59c8d19.chunk.js"
   ]
 }
