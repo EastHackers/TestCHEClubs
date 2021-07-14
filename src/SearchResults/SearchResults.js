@@ -19,33 +19,33 @@ export function SearchResults(){
         const urlEncodedActiveNow = encodeURI(activeNow);
         const urlEncodedActiveSummer = encodeURI(activeSummer);
 
-        history.push(`/TestCHEClubs/search?find_club=${urlEncodedTerm}&category=${urlEncodedCategory}
+        history.push(`/search?find_club=${urlEncodedTerm}&category=${urlEncodedCategory}
 &min_members=${urlEncodedMinimumMembers}&max_members=${urlEncodedMaximumMembers}
 &active_now=${urlEncodedActiveNow}&active_summer=${urlEncodedActiveSummer}`);
         history.go(0);
     }
 
     function clearFilters(){
-        history.push(`/TestCHEClubs/search?find_club=&category=&min_members=&max_members=&active_now=&active_summer=`);
+        history.push(`/search?find_club=&category=&min_members=&max_members=&active_now=&active_summer=`);
     }
 
 
     // Adds the searched term to the URL and redirects to search page when search button is hit
     function search(term){
         const urlEncodedTerm = encodeURI(term);
-        history.push(`/TestCHEClubs/search?find_club=${urlEncodedTerm}`);
+        history.push(`/search?find_club=${urlEncodedTerm}`);
         history.go(0);
     }
 
     // Navigates to Clubs List page when the "Clubs List" button is pressed
     function clubsList(){
-        history.push(`/TestCHEClubs/clubslist`);
+        history.push(`/clubslist`);
         history.go(0);
     }
 
     // Navigates to the home page when the logo is pressed
     function home(){
-        history.push('/TestCHEClubs/');
+        history.push('/');
         history.go(0);
     }
 

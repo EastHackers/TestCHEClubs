@@ -13,19 +13,19 @@ export function ClubsList(){
 // Adds the searched term to the URL and redirects to search page when search button is hit
     function search(term){
         const urlEncodedTerm = encodeURI(term);
-        history.push(`/TestCHEClubs/search?find_club=${urlEncodedTerm}`);
+        history.push(`/search?find_club=${urlEncodedTerm}`);
         history.go(0);
     }
 
 // Navigates to Clubs List page when the "Clubs List" button is pressed
     function clubsList(){
-        history.push(`/TestCHEClubs/clubslist`);
+        history.push(`/clubslist`);
         history.go(0);
     }
 
 // Navigates to the home page when the logo is pressed
     function home(){
-        history.push('/TestCHEClubs/');
+        history.push('/');
         history.go(0);
     }
 
