@@ -19,43 +19,48 @@ export function HomePage() {
     // Adds the searched term to the URL and redirects to search page when search button is hit
     function search(term){
         const urlEncodedTerm = encodeURI(term);
-        history.push(`/search?find_club=${urlEncodedTerm}&category=&min_members=&max_members=&active_now=&active_summer=`);
+        history.push(`/TestCHEClubs/search?find_club=${urlEncodedTerm}&category=&min_members=&max_members
+=&active_now=&active_summer=`);
         history.go(0);
     }
 
     // Navigates to Clubs List page when the "Clubs List" button is pressed
     function clubsList(){
-        history.push(`/clubslist`);
+        history.push(`/TestCHEClubs/clubslist`);
         history.go(0);
     }
 
     // Navigates to the home page when the logo is pressed
     function home(){
-        history.push('/');
+        history.push('/TestCHEClubs/');
         history.go(0);
     }
 
     //Volunteering
     function volunteering(){
-        history.push(`/search?find_club=&category=volunteering&min_members=&max_members=&active_now=&active_summer=`);
+        history.push(`/TestCHEClubs/search?find_club=&category=volunteering&min_members=&max_members=
+&active_now=&active_summer=`);
         history.go(0);
     }
 
     //Science
     function science(){
-        history.push(`/search?find_club=&category=science&min_members=&max_members=&active_now=&active_summer=`);
+        history.push(`/TestCHEClubs/search?find_club=&category=science&min_members=&max_members=
+&active_now=&active_summer=`);
         history.go(0);
     }
 
     //Arts
     function arts(){
-        history.push(`/search?find_club=&category=arts&min_members=&max_members=&active_now=&active_summer=`);
+        history.push(`/TestCHEClubs/search?find_club=&category=arts&min_members=&max_members=
+&active_now=&active_summer=`);
         history.go(0);
     }
 
     //Sports
     function sports(){
-        history.push(`/search?find_club=&category=sports&min_members=&max_members=&active_now=&active_summer=`);
+        history.push(`/TestCHEClubs/search?find_club=&category=sports&min_members=&max_members=
+&active_now=&active_summer=`);
         history.go(0);
     }
 

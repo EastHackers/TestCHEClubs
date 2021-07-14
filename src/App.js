@@ -10,9 +10,9 @@ function App() {
   return (
     <Switch>
       {/*Pages displayed whent the URL starts with certain components */}
-      <Route path = '/clubslist' component={ClubsList}/>
-      <Route path = '/search' component={SearchResults}/>
-      <Route path = '/' component={HomePage}/>
+      <Route path = '/TestCHEClubs/clubslist' component={ClubsList}/>
+      <Route path = '/TestCHEClubs/search' component={SearchResults}/>
+      <Route path = '/TestCHEClubs/' component={HomePage}/>
     </Switch>
   );
 }
