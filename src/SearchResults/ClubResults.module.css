@@ -1,0 +1,39 @@
+.results{
+    padding-left: 0;
+    padding-right: 6vw;
+    padding-bottom: 20px;
+}
+
+.tag-f{
+    margin-left: 5px;
+}
+
+.contact{
+    margin-top: 1.9vw;
+}
+
+.show-more{
+    display:flex;
+    margin-left: 20.75vw;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.6vw;
+    padding-right: 3.55vw;
+}
+
+.link-button{
+    margin-right: 10px;
+}
+
+.no-results{
+    max-width: 50vw;
+}
+
+.no-results-found{
+    display: flex;
+    justify-content: center;
+}
