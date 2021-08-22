@@ -28,12 +28,12 @@ export function Recommended(){
                             </tr>
                             {/*Renders tags if present */}
                             <div>
-                                <span className={`tag is-info is-light ${styles['tag-f']}`}>{recommended[i][11]}</span>
+                                <span className={`tag is-danger is-light ${styles['tag-f']}`}>{recommended[i][11]}</span>
                                 {recommended[i][12] &&
-                                    <span className={`tag is-info is-light ${styles['tag-f']}`}>{recommended[i][12]}</span>
+                                    <span className={`tag is-danger is-light ${styles['tag-f']}`}>{recommended[i][12]}</span>
                                 }
                                 {recommended[i][13] &&
-                                    <span className={`tag is-info is-light ${styles['tag-f']}`}>{recommended[i][13]}</span>
+                                    <span className={`tag is-danger is-light ${styles['tag-f']}`}>{recommended[i][13]}</span>
                                 }
                             </div>
                         </div>
@@ -71,7 +71,7 @@ export function Recommended(){
                             </tr>
                             {/*Button to display modal when pressed */}
                             <div className = {styles['show-more']}>
-                                <button className="button is-info" id = {recommended[i][17]}>Show More</button>
+                                <button className="button is-danger is-outlined" id = {recommended[i][17]}>Show More</button>
                             </div>
                         </div>
                     </div>
@@ -88,8 +88,8 @@ export function Recommended(){
             <div className="modal-card">
                 <header className="modal-card-head">
                 <div className={`modal-card-title ${styles['header']}`}>{recommended[i][0]}
-                    {/*Renders tags if present */}
                     <div>
+                    {/*Renders tags if present */}
                     <span className={"tag is-info is-light"}>{recommended[i][11]}</span>
                     {recommended[i][12] &&
                         <span className={`tag is-info is-light ${styles['tag-f']}`}>{recommended[i][12]}</span>
@@ -115,8 +115,8 @@ export function Recommended(){
                             {recommended[i][7]}
                         </h2>
                     </section>  
-                    {/*Renders information about how to get into contact */}
                     <section className="section">
+                        {/*Renders information about how to get into contact */}
                         <h1 className="title">Contact Information</h1>
                         <h2 className="subtitle">
                             <div className = "columns is-mobile">

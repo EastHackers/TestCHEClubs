@@ -188,7 +188,7 @@ export function SearchResultsSummary(props){
                 {/*Header for the results section of the page, including title and "Sort By" dropdown */}
                 <div className= {styles['header']}>
                     <h1 className="subtitle is-4">Best Results for <strong>{searchTerm}</strong></h1>
-                    {/*Renders the "Sort By" dropdown */}
+                    {/*Renders the "Sort By" dropdown 
                     <div className="field">
                     <p className="control has-icons-left">
                         <span className="select">
@@ -203,6 +203,7 @@ export function SearchResultsSummary(props){
                         </span>
                     </p>
                     </div>
+                    */}
                 </div>
                 {/*Imports results and displays them */}
                 <ClubResults searchTerm = {props.searchTerm} category = {props.category} 

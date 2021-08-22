@@ -11,7 +11,7 @@ export function ListOfClubs(){
     const items = [];
     const modals = [];
 
-
+    arrayClubs.sort();
     // Rendering all of the clubs previews
     for (let i = 0; i < arrayClubs.length; i++) {
         items.push(
@@ -27,12 +27,12 @@ export function ListOfClubs(){
                     </tr>
                     <div>
                         {/*Renders tags if present */}
-                        <span className={`tag is-info is-light ${styles['tag-f']}`}>{arrayClubs[i][11]}</span>
+                        <span className={`tag is-danger is-light ${styles['tag-f']}`}>{arrayClubs[i][11]}</span>
                         {arrayClubs[i][12] &&
-                            <span className={`tag is-info is-light ${styles['tag-f']}`}>{arrayClubs[i][12]}</span>
+                            <span className={`tag is-danger is-light ${styles['tag-f']}`}>{arrayClubs[i][12]}</span>
                         }
                         {arrayClubs[i][13] &&
-                            <span className={`tag is-info is-light ${styles['tag-f']}`}>{arrayClubs[i][13]}</span>
+                            <span className={`tag is-danger is-light ${styles['tag-f']}`}>{arrayClubs[i][13]}</span>
                         }
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export function ListOfClubs(){
                     </tr>
                     {/*Button to display modal when pressed */}
                     <div className = {styles['show-more']}>
-                            <button className="button is-info" id = {arrayClubs[i][17]}>Show More</button>
+                            <button className="button is-danger is-outlined" id = {arrayClubs[i][17]}>Show More</button>
                     </div>
                 </div>
             </div>

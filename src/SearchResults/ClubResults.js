@@ -64,9 +64,7 @@ export function ClubResults(props){
         })
     }
 
-    if(props.sortBy === "alphabetical"){
-        clubsArray.sort();
-    }
+    clubsArray.sort();
 
     const items = [];
 
@@ -99,12 +97,12 @@ export function ClubResults(props){
                     <div className="column is-two-fifths">  
                         {/*Renders tags if present */}
                         <div>
-                            <span className={"tag is-info is-light"}>{clubsArray[i][11]}</span>
+                            <span className={"tag is-danger is-light"}>{clubsArray[i][11]}</span>
                             {clubsArray[i][12] &&
-                                <span className={`tag is-info is-light ${styles['tag-f']}`}>{clubsArray[i][12]}</span>
+                                <span className={`tag is-danger is-light ${styles['tag-f']}`}>{clubsArray[i][12]}</span>
                             }
                             {clubsArray[i][13] &&
-                                <span className={`tag is-info is-light ${styles['tag-f']}`}>{clubsArray[i][13]}</span>
+                                <span className={`tag is-danger is-light ${styles['tag-f']}`}>{clubsArray[i][13]}</span>
                             }
                         </div>
                         {/*Basic preview information about the club */}
@@ -115,7 +113,7 @@ export function ClubResults(props){
                             <h3><strong>Advisor Email</strong>: {clubsArray[i][6]}</h3>
                             {/*Button to display modal when pressed */}
                             <div className = {styles['show-more']}>
-                                <button className="button is-info" id = {clubsArray[i][17]}>Show More</button>
+                                <button className="button is-danger is-outlined" id = {clubsArray[i][17]}>Show More</button>
                             </div>
                         </div>
                     </div>
@@ -129,8 +127,8 @@ export function ClubResults(props){
             <div className="modal-card">
                 <header className="modal-card-head">
                 <div className={`modal-card-title ${styles['header']}`}>{clubsArray[i][0]}
-                    {/*Renders tags if present */}
                     <div>
+                    {/*Renders tags if present */}
                     <span className={"tag is-info is-light"}>{clubsArray[i][11]}</span>
                     {clubsArray[i][12] &&
                         <span className={`tag is-info is-light ${styles['tag-f']}`}>{clubsArray[i][12]}</span>
@@ -156,8 +154,8 @@ export function ClubResults(props){
                             {clubsArray[i][7]}
                         </h2>
                     </section>  
-                    {/*Renders information about how to get into contact */}
                     <section className="section">
+                        {/*Renders information about how to get into contact */}
                         <h1 className="title">Contact Information</h1>
                         <h2 className="subtitle">
                             <div className = "columns is-mobile">

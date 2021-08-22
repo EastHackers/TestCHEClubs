@@ -39,11 +39,9 @@ export function NavBar(props) {
                 <motion.div
                     whileHover = {{scale: 1.15}}
                     >
-                    <button className="button is-ghost has-text-light">
-                    <a href={"https://forms.gle/bJUaSDvAyXwtheD1A"}>
-                    <strong className = "has-text-light">Advertise Your Club</strong>
+                    <a href = {"https://forms.gle/zrZdFn7pZ5ykT6DZ6"}>
+                    <button className="button is-ghost has-text-light"><strong>Advertise Your Club</strong></button>
                     </a>
-                    </button>
                 </motion.div>
                 <motion.div
                     whileHover = {{scale: 1.15}}

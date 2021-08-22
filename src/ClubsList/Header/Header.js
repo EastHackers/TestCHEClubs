@@ -12,7 +12,7 @@ export function Header(){
                 {/*This is the title of the page.*/}
                 <div className= {styles['header']}>
                     <h1 className="subtitle is-4"><strong>List of All Clubs</strong></h1>
-                {/*This is the "Sort By" dropdown.*/}
+                {/*This is the "Sort By" dropdown.
                     <div className="field">
                     <p className="control has-icons-left">
                         <span className="select">
@@ -27,6 +27,7 @@ export function Header(){
                         </span>
                     </p>
                     </div>
+                */}
                 </div>
                 {/*This is the list of the clubs.*/}
                 <ListOfClubs/>
