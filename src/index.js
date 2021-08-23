@@ -27,32 +27,37 @@ reportWebVitals();
     const decaButton = document.querySelector("#club002");
     const chessClubButton = document.querySelector("#club003");
     const footballButton = document.querySelector("#club004");
-    const hi1Button = document.querySelector("#club005");
+    const womenInScienceButton = document.querySelector("#club005");
     const hiButton = document.querySelector("#club006");
+    const girlsWhoCodeButton = document.querySelector("#club007");
 
 //Declaring different ids that the club modals can have
     const sciOlyModal = document.querySelector('#modalclub001');
     const decaModal = document.querySelector('#modalclub002');
     const chessClubModal = document.querySelector('#modalclub003');
     const footballModal = document.querySelector('#modalclub004');
-    const hi1Modal = document.querySelector('#modalclub005');
+    const womenInScienceModal = document.querySelector('#modalclub005');
     const hiModal = document.querySelector('#modalclub006');
+    const girlsWhoCodeModal = document.querySelector("#modalclub007");
 
 //Declaring different ids that the "Close Modal" buttons can have
     const sciOlyDelete = document.querySelector('#deleteclub001');
     const decaDelete = document.querySelector('#deleteclub002');
     const chessClubDelete = document.querySelector('#deleteclub003');
     const footballDelete = document.querySelector('#deleteclub004');
-    const hi1Delete = document.querySelector('#deleteclub005');
+    const womenInScienceDelete = document.querySelector('#deleteclub005');
     const hiDelete = document.querySelector('#deleteclub006');
+    const girlsWhoCodeDelete = document.querySelector("#deleteclub007");
+    
 
 //Declaring different ids that the modal backgrounds can have
     const sciOlyBg = document.querySelector('#modalbgclub001');
     const decaBg = document.querySelector('#modalbgclub002');
     const chessClubBg = document.querySelector('#modalbgclub003');
     const footballBg = document.querySelector('#modalbgclub004');
-    const hi1Bg = document.querySelector('#modalbgclub005');
+    const womenInScienceBg = document.querySelector('#modalbgclub005');
     const hiBg = document.querySelector('#modalbgclub006');
+    const girlsWhoCodeBg = document.querySelector("#modalbgclub007");
 
 //Activate respective modals when the "Show More" button for its respective club is clicked
     if(sciOlyButton){
@@ -75,9 +80,9 @@ reportWebVitals();
           footballModal.classList.add('is-active');
         })
     }
-    if(hi1Button){
-        hi1Button.addEventListener('click', () => {
-          hi1Modal.classList.add('is-active');
+    if(womenInScienceButton){
+        womenInScienceButton.addEventListener('click', () => {
+          womenInScienceModal.classList.add('is-active');
         })
     }
     if(hiButton){
@@ -89,6 +94,11 @@ reportWebVitals();
       sciOlyButton.addEventListener('click', () => {
         sciOlyModal.classList.add('is-active');
       })
+    if(girlsWhoCodeButton){
+      girlsWhoCodeButton.addEventListener('click', () => {
+        girlsWhoCodeModal.classList.add('is-active')
+      })
+    }
   }
 
 //Close respective modals when the "Close Modal" button for it is clicked
@@ -112,9 +122,9 @@ reportWebVitals();
         footballModal.classList.remove('is-active');
       })
   }
-  if(hi1Delete){
-      hi1Delete.addEventListener('click', () => {
-        hi1Modal.classList.remove('is-active');
+  if(womenInScienceDelete){
+      womenInScienceDelete.addEventListener('click', () => {
+        womenInScienceModal.classList.remove('is-active');
       })
   }
   if(hiDelete){
@@ -122,6 +132,12 @@ reportWebVitals();
         hiModal.classList.remove('is-active');
       })
   }
+  if(girlsWhoCodeDelete){
+    girlsWhoCodeDelete.addEventListener('click', () => {
+      girlsWhoCodeDelete.classList.remove('is-active')
+    })
+  }
+
 
 //Close respective modals when its background is clicked
   if(sciOlyBg){
@@ -144,15 +160,20 @@ reportWebVitals();
         footballModal.classList.remove('is-active');
       })
   }
-  if(hi1Bg){
-      hi1Bg.addEventListener('click', () => {
-        hi1Modal.classList.remove('is-active');
+  if(womenInScienceBg){
+      womenInScienceBg.addEventListener('click', () => {
+        womenInScienceModal.classList.remove('is-active');
       })
   }
   if(hiBg){
       hiBg.addEventListener('click', () => {
         hiModal.classList.remove('is-active');
       })
+  }
+  if(girlsWhoCodeBg){
+    girlsWhoCodeBg.addEventListener('click', () => {
+      girlsWhoCodeModal.classList.remove('is-active')
+    })
   }
 
 
