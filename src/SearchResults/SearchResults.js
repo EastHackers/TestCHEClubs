@@ -4,7 +4,7 @@
 import React from 'react';
 import {SearchBar} from '../SearchBar/SearchBar';
 import {SearchResultsSummary} from './SearchResultsSummary/SearchResultsSummary';
-import { useHistory } from 'react-router-dom';
+import { useHistory,useLocation } from "react-router-dom";
 
 export function SearchResults(){
 
@@ -49,7 +49,7 @@ export function SearchResults(){
         history.go(0);
     }
 
-    const {location} = useReactRouter();
+    let location = useLocation();
     const params = new URLSearchParams(location.search);
     const searchTerm = params.get('find_club');
     const category = params.get('category');

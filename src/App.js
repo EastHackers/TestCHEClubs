@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { HomePage } from './HomePage/HomePage';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {SearchResults} from './SearchResults/SearchResults';
 import {ClubsList} from './ClubsList/ClubsList'
 
