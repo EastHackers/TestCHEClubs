@@ -14,7 +14,7 @@ import { useHistory } from 'react-router-dom';
 
 export function HomePage() {
 
-    let {history} =  useHistory();
+    let history =  useHistory();
 
     // Adds the searched term to the URL and redirects to search page when search button is hit
     function search(term){
