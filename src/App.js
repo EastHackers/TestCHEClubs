@@ -2,18 +2,26 @@
 
 import React from 'react';
 import { HomePage } from './HomePage/HomePage';
-import { Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import {SearchResults} from './SearchResults/SearchResults';
 import {ClubsList} from './ClubsList/ClubsList'
 
 function App() {
   return (
-    <Switch>
-      {/*Pages displayed whent the URL starts with certain components */}
-      <Route path = '/clubslist' component={ClubsList}/>
-      <Route path = '/search' component={SearchResults}/>
-      <Route path = '/' component={HomePage}/>
-    </Switch>
+    <Router>
+      <Switch>
+        {/*Pages displayed whent the URL starts with certain components */}
+        <Route path = '/clubslist' >
+          <ClubsList/>
+        </Route>
+        <Route path = '/search' >
+          <SearchResults/>
+        </Route>
+        <Route path = '/' >
+          <HomePage/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

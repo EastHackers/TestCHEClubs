@@ -10,11 +10,11 @@ import './HomePage.css';
 import {SearchSuggestions} from './SearchSuggestions/SearchSuggestions';
 import {motion} from 'framer-motion';
 import { Recommended } from './Recommended';
-import useReactRouter from 'use-react-router';
+import { useHistory } from 'react-router-dom';
 
 export function HomePage() {
 
-    const {history} =  useReactRouter();
+    let {history} =  useHistory();
 
     // Adds the searched term to the URL and redirects to search page when search button is hit
     function search(term){

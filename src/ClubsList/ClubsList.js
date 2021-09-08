@@ -4,11 +4,11 @@
 import React from 'react';
 import {SearchBar} from '../SearchBar/SearchBar';
 import {Header} from './Header/Header';
-import useReactRouter from 'use-react-router';
+import { useHistory } from 'react-router-dom';
 
 export function ClubsList(){
 
-    const {history} =  useReactRouter();
+    let {history} =  useHistory();
 
 // Adds the searched term to the URL and redirects to search page when search button is hit
     function search(term){
