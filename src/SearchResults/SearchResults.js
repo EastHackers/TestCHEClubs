@@ -4,11 +4,11 @@
 import React from 'react';
 import {SearchBar} from '../SearchBar/SearchBar';
 import {SearchResultsSummary} from './SearchResultsSummary/SearchResultsSummary';
-import useReactRouter from 'use-react-router';
+import { useHistory,useLocation } from "react-router-dom";
 
 export function SearchResults(){
 
-    const {history} =  useReactRouter();
+    let history =  useHistory();
 
 
     function filter(term, category, minimumMembers, maximumMembers, activeNow, activeSummer){
@@ -49,7 +49,7 @@ export function SearchResults(){
         history.go(0);
     }
 
-    const {location} = useReactRouter();
+    let location = useLocation();
     const params = new URLSearchParams(location.search);
     const searchTerm = params.get('find_club');
     const category = params.get('category');
