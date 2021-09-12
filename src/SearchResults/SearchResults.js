@@ -8,7 +8,7 @@ import { useHistory,useLocation } from "react-router-dom";
 
 export function SearchResults(){
 
-    let {history} =  useHistory();
+    let history =  useHistory();
 
 
     function filter(term, category, minimumMembers, maximumMembers, activeNow, activeSummer){
