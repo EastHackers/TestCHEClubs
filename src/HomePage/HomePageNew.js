@@ -12,9 +12,8 @@ import {motion} from 'framer-motion';
 import { Recommended } from './Recommended';
 import useReactRouter from 'use-react-router';
 
-interface Props{}
 
-export const HomePageNew: React.FC<Props> = () => {
+export const HomePageNew = () => {
     return (
         <div>
             <div>HomePageNew</div>
